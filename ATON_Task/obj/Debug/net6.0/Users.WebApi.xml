@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Users.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Users.WebApi.Controllers.UsersController.GetAll">
+            <summary>
+            Gets the list active(missing RevokedOn) of the users, list sorted by CreatedOn
+            </summary>
+            <remarks>
+            Simple request:
+            GET /Users
+            </remarks>>
+            <returns>Returns UserListVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.Get(System.String)">
+            <summary>
+            Get the user by login
+            </summary>
+            <remarks>
+            Simple request:
+            GET /Users/Userlogin
+            </remarks>>
+            <param name="login">User login</param>
+            <returns>Returns UserDetailsVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.GetAllGreaterThan(System.Int32)">
+            <summary>
+            Get all users over a certain age
+            </summary>
+            <remarks>
+            Simple request:
+            GET /Users/greaterThen/login
+            </remarks>>
+            <param name="age">User age</param>
+            <returns>Returns UserListGreaterThenVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.GetYourself">
+            <summary>
+            Get information about yourself
+            </summary>
+            <remarks>
+            Simple request:
+            GET /Users/yourself
+            </remarks>>
+            <returns>UserYourselfDataVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.Create(Users.WebApi.Models.CreateUserDto)">
+            <summary>
+            Creates the user
+            </summary>
+            <remarks>
+            Simple request:
+            POST /Users
+            {
+                login: "user login"
+                password: "user password"
+                name: "user name"
+                gender: "user gender"
+                birthDay: "user birth day"
+                admin: "is admin user"
+            }
+            </remarks>>
+            <param name="CreateUserDto">CreateUserDto object</param>
+            <returns>Returns NoContent</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.UpdateYourself(Users.WebApi.Models.UpdateYourselfDto)">
+            <summary>
+            Update yourself
+            </summary>
+            <remarks>
+            all fields are not required
+            Simple request:
+            PUT /Users
+            {
+                login: "new user login"
+                password: "new user password"
+                name: "new user name"
+                gender: "new user gender"
+                birthDay: "new user birth day"
+            }
+            </remarks>>
+            <param name="UpdateYourselfDto">UpdateYourselfDto object</param>
+            <returns>Returns NoContent</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.Update(System.String,Users.WebApi.Models.UpdateUserDto)">
+            <summary>
+            Update Users
+            </summary>
+            <remarks>
+            all fields are not required
+            Simple request:
+            PUT /user/userLogin
+            {
+                login: "new user login"
+                password: "new user password"
+                name: "new user name"
+                gender: "new user gender"
+                birthDay: "new user birth day"
+            }
+            </remarks>>
+            <param name="login ,UpdateUserDto,UpdateUserDto">user login ,UpdateUserDto object</param>
+            <returns>Returns NoContent</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.UpdateRecovery(System.String)">
+            <summary>
+            User Recovery
+            </summary>
+            <remarks>
+            Simple request:
+            PUT /Users/recovery/userLogin
+            </remarks>>
+            <param name="login">user login</param>
+            <returns>Returns NoContent</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="M:Users.WebApi.Controllers.UsersController.Delete(System.String,System.Boolean)">
+            <summary>
+            Delete user
+            </summary>
+            <remarks>
+            Simple request:
+            DELETE /Users/userLogin?isFullDeleted=false
+            </remarks>>
+            <param name="isFullDeleted ,login,login">user login, full or soft removal</param>
+            <returns>Returns NoContent</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+            <response code="403">If the user is not admin</response>
+        </member>
+        <member name="T:Users.WebApi.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:Users.WebApi.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:Users.WebApi.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+    </members>
+</doc>

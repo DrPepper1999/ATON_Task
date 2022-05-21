@@ -1,0 +1,17 @@
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Persistence.deps.json
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Persistence.dll
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Persistence.pdb
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Application.dll
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Domain.dll
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Application.pdb
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\bin\Debug\net6.0\Users.Domain.pdb
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.csproj.AssemblyReference.cache
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.AssemblyInfoInputs.cache
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.AssemblyInfo.cs
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.csproj.CopyComplete
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.dll
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\refint\Users.Persistence.dll
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\Users.Persistence.pdb
+C:\Users\molch\source\repos\ATON_Task\Users.Persistence\obj\Debug\net6.0\ref\Users.Persistence.dll
